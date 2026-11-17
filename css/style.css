@@ -22,6 +22,7 @@ body {
 
 .nav h1 {
   margin-left: 28px;
+  color: #1e96fc;
 }
 
 .nav-list {
@@ -41,4 +42,56 @@ body {
   color: #ffffff;
 }
 /*FIM HEADER*/
+
+/*INÍCIO MAIN*/
+.main{
+  width: 100%;
+  background-color: #000;
+  height: calc(100vh - 80px);
+  background-image: url("../img/programador.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.main h1 {
+  color: #ffffff;
+  font-size: 54px;
+}
+
+.main p {
+  color: #1e96fc;
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.btn-projetos {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 0;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.8s;
+}
+
+.main a {
+  text-decoration: none;
+  color: #181818;
+}
+
+.btn-projetos:hover {
+  background-color: #1e96fc;
+  color: #ffffff;
+}
+
+
+/*FIM MAIN*/
+
+
 
