@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -24,7 +24,6 @@ html {
   position: sticky;
   top: 0;
   z-index: 9;
-  
 }
 
 .nav h1 {
@@ -36,10 +35,9 @@ html {
   display: flex;
   list-style: none;
   margin-right: 28px;
-  
 }
 
-.nav-list a{
+.nav-list a {
   text-decoration: none;
   color: #ddd;
   padding: 20px;
@@ -51,7 +49,7 @@ html {
 /*FIM HEADER*/
 
 /*INÍCIO MAIN*/
-.main{
+.main {
   width: 100%;
   background-color: #000;
   height: calc(100vh - 80px);
@@ -98,7 +96,6 @@ html {
   transform: scale(1.1);
 }
 
-
 /*FIM MAIN*/
 
 /*INICIO ABOUT*/
@@ -115,7 +112,6 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-
 
 .about div {
   max-width: 50%;
@@ -172,9 +168,8 @@ html {
   transition: 0.9s;
 }
 
-.projects img:hover{
+.projects img:hover {
   opacity: 1;
-
 }
 
 .action {
@@ -206,7 +201,7 @@ html {
   position: fixed;
   bottom: 130px;
   right: 10px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +216,7 @@ html {
 }
 
 .top-home ul {
- list-style: none;
+  list-style: none;
 }
 
 .top-home:hover {
@@ -251,7 +246,76 @@ footer p {
 
 /*FIM RODAPE FOOTER*/
 
+/*RESPOSIVIDADE*/
 
+@media (max-width: 1050px) {
 
+  /*INICIO NAV*/
+  .nav h1 {
+    font-size: 18px;
+  }
 
+  .nav-list a {
+    font-size: 16px;
+  }
 
+  /*FIM NAV*/
+
+  /*INICIO MAIN*/
+  .main h1 {
+    font-size: 45px;
+  }
+
+  .main p {
+    font-size: 18px;
+  }
+
+  .main {
+    background-size: cover;
+  }
+
+  /*FIM MAIN*/
+
+  /*INICIO SOBRE*/
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .about div {
+    max-width: 80%;
+  }
+
+  .about div h2 {
+    font-size: 45px;
+  }
+
+  .about img {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  /*FIM SOBRE*/
+
+  /*FIM PROJECT*/
+  .projects img {
+    width: 27.5%;
+  }
+
+  /*FIM PROJECT*/
+
+  /*INICIO FOOTER*/
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  /*FIM FOOTER*/
+}
